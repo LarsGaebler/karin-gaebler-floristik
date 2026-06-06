@@ -583,7 +583,7 @@
             <figure><img src="images/hochzeit-festzelt.jpg" alt="Festlich dekorierte Tafel im Festzelt" loading="lazy"></figure>
             <figure><img src="images/heu-vasen.jpg" alt="Rustikale Gestecke in Heu-Vasen" loading="lazy"></figure>
             <figure><img src="images/trockenblumen.jpg" alt="Zarte Trockenblumen-Komposition" loading="lazy"></figure>
-            <figure><img src="images/brautstrauss-eukalyptus.jpg" alt="Brautstrauss mit Rosen und Eukalyptus" loading="lazy"></figure>
+            <figure><img src="images/tischdeko-glaeser.jpg" alt="Festliche Tischdekoration mit Rosen in kleinen Vasen" loading="lazy"></figure>
             <figure><img src="images/brautstrauss-brunnen.jpg" alt="Pastellfarbener Brautstrauss am Brunnen" loading="lazy"></figure>
             <figure><img src="images/vase-barrel.jpg" alt="Zarte Sommerblumen in Glasvase auf Weinfass" loading="lazy"></figure>
             <figure><img src="images/rosen-rosa.jpg" alt="Zartrosa Rosen, Karin bei der Arbeit" loading="lazy"></figure>
@@ -685,10 +685,16 @@
     );
 
     // Sanftes Einblenden beim Scrollen
-    const io = new IntersectionObserver((entries) => {
-        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.12 });
-    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    // threshold 0 + rootMargin: funktioniert auch bei sehr hohen Elementen (z.B. Galerie auf dem Handy)
+    if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+        }, { threshold: 0, rootMargin: '0px 0px -8% 0px' });
+        document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    } else {
+        // Fallback: alles sofort sichtbar
+        document.querySelectorAll('.reveal').forEach(el => el.classList.add('in'));
+    }
 </script>
 
 </body>
