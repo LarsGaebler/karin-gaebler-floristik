@@ -38,6 +38,7 @@
             color: var(--ink);
             line-height: 1.8;
             -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
         }
 
         img { display: block; max-width: 100%; }
@@ -391,7 +392,7 @@
         @media (max-width: 880px) {
             nav { padding: 1rem 1.4rem; }
             .nav-links { gap: 1.5rem; }
-            .gallery { column-count: 2; }
+            .gallery { grid-template-columns: repeat(2, 1fr); }
             .welcome-grid { grid-template-columns: 1fr; gap: 2.5rem; }
             .welcome-photo img { aspect-ratio: 16 / 11; }
             .contact-grid { grid-template-columns: 1fr; gap: 2.8rem; }
@@ -400,8 +401,16 @@
             section { padding: 4.8rem 1.4rem; }
             .brand { font-size: 1.15rem; }
             .services-grid { grid-template-columns: repeat(2, 1fr); }
-            .gallery { column-count: 1; }
             .hero-sub { font-size: 1.25rem; }
+
+            /* Galerie randlos über die volle Bildschirmbreite */
+            .gallery {
+                grid-template-columns: 1fr;
+                gap: 4px;
+                width: 100vw;
+                margin-left: calc(50% - 50vw);
+            }
+            .gallery img { aspect-ratio: 1 / 1; }
 
             .nav-toggle { display: block; }
             .nav-links {
@@ -612,7 +621,7 @@
 
             <div class="contact-map reveal">
                 <iframe
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=7.604%2C46.918%2C7.664%2C46.950&amp;layer=mapnik&amp;marker=46.9347%2C7.6342"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=7.6086%2C46.9401%2C7.6316%2C46.9521&amp;layer=mapnik&amp;marker=46.9461498%2C7.6201485"
                     title="Standort Karin Gäbler Floristik, Walkringen"
                     loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
