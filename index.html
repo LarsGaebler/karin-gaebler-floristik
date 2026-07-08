@@ -5,12 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Karin Gäbler Floristik in Walkringen — Blumen mit Herz für Hochzeiten, Konfirmation, Trauer und besondere Anlässe. Natürliche, handgebundene Arrangements.">
     <title>Karin Gäbler Floristik — Walkringen</title>
-    <link rel="icon" href="images/logo.png">
+    <link rel="canonical" href="https://karin-gaebler-floristik.ch/">
+    <meta name="theme-color" content="#FAF8F3">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
     <meta property="og:title" content="Karin Gäbler Floristik — Walkringen">
-    <meta property="og:description" content="Blumen mit Herz für die schönsten Momente Ihres Lebens.">
+    <meta property="og:description" content="Blumen mit Herz — für die schönsten und emotionalsten Momente Ihres Lebens, natürlich und mit Liebe gefertigt.">
+    <meta property="og:url" content="https://karin-gaebler-floristik.ch/">
+    <meta property="og:image" content="https://karin-gaebler-floristik.ch/images/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="de_CH">
     <meta property="og:type" content="website">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Florist",
+      "name": "Karin Gäbler Floristik",
+      "url": "https://karin-gaebler-floristik.ch/",
+      "image": "https://karin-gaebler-floristik.ch/images/og-image.jpg",
+      "logo": "https://karin-gaebler-floristik.ch/images/logo.png",
+      "telephone": "+41 79 834 19 29",
+      "email": "k.gaebler@bluemail.ch",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Golpisbergstrasse 6",
+        "postalCode": "3512",
+        "addressLocality": "Walkringen",
+        "addressCountry": "CH"
+      },
+      "geo": { "@type": "GeoCoordinates", "latitude": 46.9461498, "longitude": 7.6201485 },
+      "sameAs": ["https://www.instagram.com/karin__gaebler/"]
+    }
+    </script>
 
+    <link rel="preload" as="image" href="images/hero-bg.jpg" fetchpriority="high">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Lato:wght@300;400&display=swap" rel="stylesheet">
@@ -30,6 +60,17 @@
         }
 
         html { scroll-behavior: smooth; }
+
+        .sr-only {
+            position: absolute; width: 1px; height: 1px;
+            padding: 0; margin: -1px; overflow: hidden;
+            clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+        }
+
+        a:focus-visible, button:focus-visible {
+            outline: 2px solid var(--brown);
+            outline-offset: 3px;
+        }
 
         body {
             font-family: 'Lato', sans-serif;
@@ -466,7 +507,8 @@
 <!-- ─── HERO ─── -->
 <section id="hero">
     <div class="hero-inner">
-        <img class="hero-logo" src="images/logo.png" alt="Karin Gäbler Floristik">
+        <h1 class="sr-only">Karin Gäbler Floristik — Blumen aus Walkringen</h1>
+        <img class="hero-logo" src="images/logo.png" alt="Karin Gäbler Floristik" width="1200" height="693" fetchpriority="high">
         <p class="hero-tagline">Floristik aus Walkringen</p>
         <p class="hero-sub">Blumen mit Herz — für die schönsten und emotionalsten Momente Ihres Lebens, natürlich und mit Liebe gefertigt.</p>
         <a href="#kontakt" class="btn">Kontakt aufnehmen</a>
@@ -542,27 +584,27 @@
         </div>
 
         <div class="gallery reveal">
-            <figure><img src="images/eierschalen.jpg" alt="Eierschalen-Vasen mit Frühlingsblumen" loading="lazy"></figure>
-            <figure><img src="images/vasen-fenster.jpg" alt="Bunte Blumen in kleinen Vasen am Fenster" loading="lazy"></figure>
-            <figure><img src="images/ranunkel-nest.jpg" alt="Rote Ranunkeln im Zweignest" loading="lazy"></figure>
-            <figure><img src="images/strauss-bunt.jpg" alt="Bunter Sommerstrauss" loading="lazy"></figure>
-            <figure><img src="images/trauerkranz.jpg" alt="Trauerkranz mit weissen Blüten" loading="lazy"></figure>
-            <figure><img src="images/sonnenblumen.jpg" alt="Sonnenblumen-Gesteck in Holzkiste" loading="lazy"></figure>
-            <figure><img src="images/hochzeit-festzelt.jpg" alt="Festlich dekorierte Tafel im Festzelt" loading="lazy"></figure>
-            <figure><img src="images/heu-vasen.jpg" alt="Rustikale Gestecke in Heu-Vasen" loading="lazy"></figure>
-            <figure><img src="images/trockenblumen.jpg" alt="Zarte Trockenblumen-Komposition" loading="lazy"></figure>
-            <figure><img src="images/tischdeko-glaeser.jpg" alt="Festliche Tischdekoration mit Rosen in kleinen Vasen" loading="lazy"></figure>
-            <figure><img src="images/brautstrauss-brunnen.jpg" alt="Pastellfarbener Brautstrauss am Brunnen" loading="lazy"></figure>
-            <figure><img src="images/vase-barrel.jpg" alt="Zarte Sommerblumen in Glasvase auf Weinfass" loading="lazy"></figure>
-            <figure><img src="images/flechtenzweige.jpg" alt="Frühlingsblumen mit Flechtenzweigen" loading="lazy"></figure>
-            <figure><img src="images/gelbe-vase.jpg" alt="Gelbe Blumen in schwarzer Drahtvase" loading="lazy"></figure>
-            <figure><img src="images/wildblumen-flaschen.jpg" alt="Wildblumen in Flaschen-Vasen" loading="lazy"></figure>
-            <figure><img src="images/karin-vasen.jpg" alt="Karin beim Gestalten der Flaschen-Vasen" loading="lazy"></figure>
-            <figure><img src="images/adventskraenze.jpg" alt="Adventskränze in der Werkstatt" loading="lazy"></figure>
-            <figure><img src="images/event-hof.jpg" alt="Festlich gedeckte Tafeln im Innenhof" loading="lazy"></figure>
-            <figure><img src="images/distel-kranz.jpg" alt="Trockenkranz aus Disteln" loading="lazy"></figure>
-            <figure><img src="images/pusteblumen.jpg" alt="Pusteblumen auf Holzleiste" loading="lazy"></figure>
-            <figure><img src="images/adventstisch.jpg" alt="Festtafel mit Adventskränzen und Kerzen" loading="lazy"></figure>
+            <figure><img src="images/eierschalen.jpg" alt="Eierschalen-Vasen mit Frühlingsblumen" loading="lazy" decoding="async"></figure>
+            <figure><img src="images/vasen-fenster.jpg" alt="Bunte Blumen in kleinen Vasen am Fenster" loading="lazy" decoding="async"></figure>
+            <figure><img src="images/ranunkel-nest.jpg" alt="Rote Ranunkeln im Zweignest" loading="lazy" decoding="async"></figure>
+            <figure><img src="images/strauss-bunt.jpg" alt="Bunter Sommerstrauss" loading="lazy" decoding="async"></figure>
+            <figure><img src="images/trauerkranz.jpg" alt="Trauerkranz mit weissen Blüten" loading="lazy" decoding="async"></figure>
+            <figure><img src="images/sonnenblumen.jpg" alt="Sonnenblumen-Gesteck in Holzkiste" loading="lazy" decoding="async"></figure>
+            <figure><img src="images/hochzeit-festzelt.jpg" alt="Festlich dekorierte Tafel im Festzelt" loading="lazy" decoding="async"></figure>
+            <figure><img src="images/heu-vasen.jpg" alt="Rustikale Gestecke in Heu-Vasen" loading="lazy" decoding="async"></figure>
+            <figure><img src="images/trockenblumen.jpg" alt="Zarte Trockenblumen-Komposition" loading="lazy" decoding="async"></figure>
+            <figure><img src="images/tischdeko-glaeser.jpg" alt="Festliche Tischdekoration mit Rosen in kleinen Vasen" loading="lazy" decoding="async"></figure>
+            <figure><img src="images/brautstrauss-brunnen.jpg" alt="Pastellfarbener Brautstrauss am Brunnen" loading="lazy" decoding="async"></figure>
+            <figure><img src="images/vase-barrel.jpg" alt="Zarte Sommerblumen in Glasvase auf Weinfass" loading="lazy" decoding="async"></figure>
+            <figure><img src="images/flechtenzweige.jpg" alt="Frühlingsblumen mit Flechtenzweigen" loading="lazy" decoding="async"></figure>
+            <figure><img src="images/gelbe-vase.jpg" alt="Gelbe Blumen in schwarzer Drahtvase" loading="lazy" decoding="async"></figure>
+            <figure><img src="images/wildblumen-flaschen.jpg" alt="Wildblumen in Flaschen-Vasen" loading="lazy" decoding="async"></figure>
+            <figure><img src="images/karin-vasen.jpg" alt="Karin beim Gestalten der Flaschen-Vasen" loading="lazy" decoding="async"></figure>
+            <figure><img src="images/adventskraenze.jpg" alt="Adventskränze in der Werkstatt" loading="lazy" decoding="async"></figure>
+            <figure><img src="images/event-hof.jpg" alt="Festlich gedeckte Tafeln im Innenhof" loading="lazy" decoding="async"></figure>
+            <figure><img src="images/distel-kranz.jpg" alt="Trockenkranz aus Disteln" loading="lazy" decoding="async"></figure>
+            <figure><img src="images/pusteblumen.jpg" alt="Pusteblumen auf Holzleiste" loading="lazy" decoding="async"></figure>
+            <figure><img src="images/adventstisch.jpg" alt="Festtafel mit Adventskränzen und Kerzen" loading="lazy" decoding="async"></figure>
         </div>
     </div>
 </section>
