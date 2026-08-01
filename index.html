@@ -6,7 +6,7 @@
     <meta name="description" content="Karin Gäbler Floristik in Walkringen — Blumen mit Herz für Hochzeiten, Konfirmation, Trauer und Events. Natürliche, handgebundene Arrangements und Blumenabos für das Emmental und die Region Bern.">
     <title>Floristik Walkringen — Hochzeiten, Trauer &amp; Blumenabo | Karin Gäbler</title>
     <link rel="canonical" href="https://karin-gaebler-floristik.ch/">
-    <meta name="theme-color" content="#FAF8F3">
+    <meta name="theme-color" content="#121110">
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
 
@@ -58,15 +58,15 @@
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
         :root {
-            --cream:      #FAF8F3;
-            --warm:       #F1EADD;
-            --ink:        #4A3B30;
-            --brown:      #614C3F;
-            --brown-soft: #8A7563;
-            --muted:      #9C8B7C;
-            --line:       #E6DDCF;
-            --card:       #FDFCF9;
-            --dark:       #2E2620;
+            --cream:      #121110;   /* Seitenhintergrund: Schwarz */
+            --warm:       #201914;   /* Sektionen: Dunkelbraun */
+            --ink:        #EFE8DE;   /* Text: Creme */
+            --brown:      #C9A585;   /* Akzent: helles Braun */
+            --brown-soft: #A8907A;
+            --muted:      #7E6F61;
+            --line:       #35291F;
+            --card:       #1A1510;   /* Karten: Dunkelbraun */
+            --dark:       #0A0908;   /* Footer: Tiefschwarz */
         }
 
         html { scroll-behavior: smooth; }
@@ -104,14 +104,14 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: rgba(250, 248, 243, 0.92);
+            background: rgba(18, 17, 16, 0.92);
             backdrop-filter: blur(12px);
             border-bottom: 1px solid transparent;
             transition: border-color .4s, box-shadow .4s, padding .4s;
         }
         nav.scrolled {
             border-bottom-color: var(--line);
-            box-shadow: 0 2px 24px rgba(74,59,48,0.05);
+            box-shadow: 0 2px 24px rgba(0,0,0,0.4);
             padding-top: .85rem;
             padding-bottom: .85rem;
         }
@@ -173,7 +173,7 @@
             padding: 7rem 2rem 4rem;
             background-color: var(--cream);
             background-image:
-                linear-gradient(rgba(250,248,243,0.86), rgba(250,248,243,0.90)),
+                linear-gradient(rgba(18,17,16,0.82), rgba(18,17,16,0.88)),
                 url('images/hero-bg.jpg');
             background-size: cover;
             background-position: center 26%;
@@ -190,12 +190,12 @@
         #hero::before {
             width: 55vw; height: 55vw;
             top: -18vw; left: -14vw;
-            background: radial-gradient(circle, rgba(138,117,99,0.07) 0%, transparent 68%);
+            background: radial-gradient(circle, rgba(201,165,133,0.10) 0%, transparent 68%);
         }
         #hero::after {
             width: 50vw; height: 50vw;
             bottom: -16vw; right: -12vw;
-            background: radial-gradient(circle, rgba(138,117,99,0.06) 0%, transparent 68%);
+            background: radial-gradient(circle, rgba(201,165,133,0.08) 0%, transparent 68%);
         }
 
         .hero-inner {
@@ -209,6 +209,7 @@
         }
 
         .hero-logo {
+            filter: brightness(0) invert(0.92);
             width: min(560px, 82vw);
             height: auto;
             margin: 0 auto 1.8rem;
@@ -301,7 +302,7 @@
             position: relative;
             border-radius: 3px;
             overflow: hidden;
-            box-shadow: 0 20px 50px rgba(74,59,48,0.12);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.55);
         }
         .welcome-photo img {
             width: 100%; height: 100%;
@@ -340,7 +341,7 @@
         }
         .service-card:hover {
             transform: translateY(-6px);
-            box-shadow: 0 16px 44px rgba(74,59,48,0.09);
+            box-shadow: 0 16px 44px rgba(0,0,0,0.5);
             border-color: var(--brown-soft);
         }
         .svc-icon { width: 46px; height: 46px; margin: 0 auto 1.4rem; color: var(--brown); }
@@ -421,7 +422,7 @@
             overflow: hidden;
             min-height: 360px;
             filter: saturate(.7) contrast(1.03);
-            box-shadow: 0 16px 44px rgba(74,59,48,0.10);
+            box-shadow: 0 16px 44px rgba(0,0,0,0.5);
         }
         .contact-map iframe { width: 100%; height: 100%; min-height: 360px; border: 0; display: block; }
 
@@ -475,7 +476,7 @@
                 top: 100%; left: 0; right: 0;
                 flex-direction: column;
                 gap: 0;
-                background: rgba(250, 248, 243, 0.98);
+                background: rgba(18, 17, 16, 0.98);
                 backdrop-filter: blur(12px);
                 border-bottom: 1px solid var(--line);
                 max-height: 0;
@@ -666,6 +667,16 @@
                     <div>
                         <span class="c-label">Instagram</span>
                         <span class="c-val"><a href="https://www.instagram.com/karin__gaebler/" target="_blank" rel="noopener">Karin Gäbler</a></span>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="c-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.3 1.1 6-5.4-2.9-5.4 2.9 1.1-6L3.2 9.4l6.1-.8L12 3z"/></svg>
+                    </div>
+                    <div>
+                        <span class="c-label">Google-Bewertung</span>
+                        <span class="c-val"><a href="https://search.google.com/local/writereview?placeid=ChIJ7TOsuCID-GsRp44_gF6l9N4" target="_blank" rel="noopener">Bewertung schreiben</a></span>
                     </div>
                 </div>
             </div>
